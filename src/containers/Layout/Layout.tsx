@@ -17,20 +17,10 @@ import MenuIcon from "@material-ui/icons/Menu";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import Navigation from "../../components/BottomNavigation";
 import { ILayout } from "./ILayout";
-import { useStyles } from "./LayoutStyle";
+import { useStyles } from "./layoutStyle";
 
 const Layout: React.FC<ILayout> = ({ title, children }) => {
   const classes = useStyles();
-  const theme = useTheme();
-  const [open, setOpen] = React.useState<boolean>(false);
-
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
 
   return (
     <div className={classes.root}>

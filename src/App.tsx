@@ -6,7 +6,6 @@ import Layout from "./containers/Layout/Layout";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Visitor from "./components/Visit";
 import Spending from "./components/Spending";
-import BottomNavigation from "./components/BottomNavigation";
 
 const theme: Theme = createMuiTheme({
   palette: {
