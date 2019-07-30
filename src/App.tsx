@@ -5,7 +5,6 @@ import { green, red } from "@material-ui/core/colors";
 import Layout from "./containers/Layout/Layout";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Visitor from "./components/Visit";
-import Spending from "./components/Spending";
 
 const theme: Theme = createMuiTheme({
   palette: {
@@ -27,8 +26,7 @@ const App: React.FC = () => (
     <Router>
       <Layout title="TITLE">
         <Switch>
-          <Route exact path="/" component={Spending} />
-          <Route path="/text" component={Visitor} />
+          <Route path="/" component={Visitor} />
         </Switch>
       </Layout>
     </Router>

@@ -1,9 +1,10 @@
-import { ReactNode } from "react";
+import { ReactNode, MouseEvent } from "react";
+import CategoryContent from "../../domain/models/CategoryContent";
 
 interface ICategoryProps {
   title: string;
-  body?: ReactNode;
-  icon?: ReactNode;
+  body: Array<CategoryContent>;
+  handleClick(e: MouseEvent, elementId: number): void;
 }
 
 export default ICategoryProps;
